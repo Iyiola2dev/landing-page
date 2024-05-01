@@ -1,0 +1,24 @@
+.span1{
+    border: none;
+    background-color:rgb(105, 241, 105);
+    color: #fff;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 2px;
+}
+.span2{
+    border: none;
+    background-color:rgb(86, 86, 218);
+    color: #fff;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 2px;
+}
+
+h1{
+    font-size: 17px;
+   
+}
+h2{
+    font-size: 16px;
+}
