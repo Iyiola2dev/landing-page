@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="h-screen w-screen">
+  <body class="h-screen w-screen md:overflow-x-hidden">
     <main class="flex flex-col">
       <div
         class="flex flex-col justify-center items-center px-2 gap-4 bg-cover bg-center m-0 p-0"
@@ -38,8 +38,10 @@
         <div
           class="flex flex-col justify-center items-center text-center mt-2 px-5 gap-3"
         >
-          <h1 class="font-extrabold">A HISTORY OF EVERYTHING YOU COPY</h1>
-          <p class="text-m text-center text-[gray]">
+          <h1 class="font-extrabold md:text-4xl">
+            A HISTORY OF EVERYTHING YOU COPY
+          </h1>
+          <p class="text-sm text-center text-[gray] md:px-[25rem] md:text-2xl">
             Clipboard allows you to track and organize everything you copy
             instantly access your clipboard on all your devices.
           </p>
@@ -53,49 +55,88 @@
         class="mt-6 px-2 gap-4 flex flex-col justify-center items-center"
       >
         <div class="flex flex-col justify-center items-center px-5">
-          <h2 class="font-extrabold">Access Clipboard anywhere</h2>
-          <p class="text-center text-m text-[gray]">
+          <h2 class="font-extrabold md:text-4xl">Access Clipboard anywhere</h2>
+          <p class="text-center text-m text-[gray] md:px-[15rem] md:text-2xl">
             Whether you are on the go,or at your computer, you can access all
             your clipboard snippets in a few simple clicks
           </p>
         </div>
-        <img src="./images/secondimage.jpeg" alt="computer" />
+        <div class="mt-5">
+          <img src="./images/secondimage.jpeg" alt="computer" />
+        </div>
       </section>
       <section
-        class="mt-6 px-2 gap-4 flex flex-col justify-center items-center"
+        class="mt-6 px-2 gap-4 md:gap-24 flex flex-col justify-center items-center"
       >
-        <div class="flex flex-col justify-center items-center px-5">
-          <h2 class="font-extrabold">Keep track of your snippets</h2>
-          <p class="text-center text-m text-[gray]">
+        <div class="flex flex-col justify-center items-center md:gap-5 px-5">
+          <h2 class="font-extrabold md:text-4xl">
+            Keep track of your snippets
+          </h2>
+          <p class="text-center text-m text-[gray] md:px-[17rem] md:text-base">
             Clipboard instantly stores any item you copy in the cloud, meaing
             you can access your snippets immediately on all your devices, our
             Mac and IOS apps will help you organize everything
           </p>
         </div>
-        <div class="flex flex-col justify-center items-center px-5">
-          <img class="h-60" src="./images/thirdimage.jpeg" alt="" />
-          <div class="flex flex-col justify-center items-center px-5">
-            <h3 class="font-bold mt-4">Quick Search</h3>
-            <p class="text-center text-m text-[gray]">
-              Easily Search your snippets by content, category, web address,
-              application and more.
-            </p>
-          </div>
-          <div class="flex flex-col justify-center items-center px-5 my-3">
-            <h3 class="font-bold mt-4">ICloud Sync</h3>
-            <p class="text-center text-m text-[gray]">
-              Instanly saves and syncs snippets across all platforms
-            </p>
+        <div class="flex flex-col justify-center md:justify-between w-full md:px-20  items-center px-5 md:flex-row">
+          <img
+            class="h-60 md:h-[23rem]"
+            src="./images/thirdimage.jpeg"
+            alt=""
+          />
+          <div class="md:flex  flex-col">
+            <div class="flex flex-col justify-center   items-center md:items-start px-5 ">
+              <h3 class="font-bold mt-4 md:text-2xl md:flex md:justify-start">
+                Quick Search
+              </h3>
+              <p
+                class="text-center text-m text-[gray] md:w-[25rem] md:text-1xl md:text-left"
+              >
+                Easily Search your snippets by content, category, web address,
+                application and more.
+              </p>
+            </div>
+            <div class="flex flex-col justify-center items-center px-5 md:items-start my-3">
+              <h3 class="font-bold mt-4 md:text-2xl md:flex md:justify-start">ICloud Sync</h3>
+              <p
+                class="text-center text-m text-[gray] md:w-[25rem] md:text-1xl md:text-left"
+              >
+                Instanly saves and syncs snippets across all platforms
+              </p>
+            </div>
           </div>
         </div>
       </section>
-      <hr>
-      <div class="icons flex flex-row justify-center items-center px-5 gap-3 my-3 mx-3" >
-        <img class="h-5" src="./images/Google.jpeg" alt="">
-        <img class="h-5" src="./images/HPE.jpeg" alt="">
-        <img class="h-5" src="./images/IBM.jpeg" alt="">
-        <img class="h-5" src="./images/microsoft.jpeg" alt="">
-      
+      <section class="mt-6 px-2 md:h-screen md:gap-40 gap-4 flex flex-col justify-center items-center">
+        <div class="flex flex-col justify-center items-center px-5 md:gap-5 ">
+          <h3 class="font-extrabold md:text-4xl">Supercharge your Workflow</h3>
+          <p class="text-sm text-center text-[gray] md:px-[25rem] md:text-lg">We've got the tools to boost your personality</p>
+        </div>
+        <div class="flex flex-col justify-center md:justify-between md:px-20 md:w-full items-center px-5 *:gap-5 space-y-10 md:space-y-0 md:flex-row">
+          <div class="flex flex-col justify-center items-center ">
+            <h4 class="font-bold mt-4 md:text-2xl md:flex md:justify-start">Create Blacklist</h4>
+            <p class="text-center text-[gray] md:w-[21rem]">Easily search your snippets by content, category web address, application, and more</p>
+          </div>
+
+          <div class="flex flex-col justify-center items-center">
+            <h4 class="font-bold mt-4 md:text-2xl md:flex md:justify-start">Plain Text Snippets</h4>
+            <p class="text-center text-[gray] md:w-[21rem]">Remove unwanted formatting from copied text for a consistent look.</p>
+          </div>
+
+          <div class="flex flex-col justify-center items-center ">
+            <h4 class="font-bold mt-4 md:text-2xl md:flex md:justify-start">Sneak Preview</h4>
+            <p class="text-center text-[gray] md:w-[21rem]">Quick preview of all snippets on your Clipboard for easy access</p>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <div
+        class="icons flex flex-row justify-center items-center px-5 gap-3 my-3 mx-3 md:gap-20"
+      >
+        <img class="h-5 md:h-10" src="./images/Google.jpeg" alt="" />
+        <img class="h-5 md:h-10" src="./images/HPE.jpeg" alt="" />
+        <img class="h-5 md:h-10" src="./images/IBM.jpeg" alt="" />
+        <img class="h-5 md:h-10" src="./images/microsoft.jpeg" alt="" />
       </div>
     </main>
   </body>
